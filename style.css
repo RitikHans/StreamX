@@ -209,3 +209,44 @@ nav{
     margin-bottom: 5px;
 
 }
+
+
+/* Adding Responsiveness to website  */
+
+@media (max-width: 900px){
+    .menu-icon{
+        display: none;
+    }
+    .sidebar{
+        display: none;
+    }
+    .container,.large-container{
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+    #nav-right img{
+        display: none;
+    }
+    #nav-right, .user-icon{
+        display: none;
+        width: 30px;
+    }
+    #nav-middle .search-box input{
+        width: 100px;
+        /* margin-right: 1222px; */
+    }
+    #nav-middle .search-box{
+        /* display: flex;
+        justify-content: flex-start;
+        align-items: center; */
+        /* margin-right: 1222px; */
+        float: left;
+    }
+    #nav-middle .mic-icon{
+        display: none;
+    }
+    .nav-logo{
+        width: 90px;
+        margin-right: 0px;
+    }
+}
