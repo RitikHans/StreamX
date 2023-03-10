@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,244 +8,316 @@
     <title>Play Video</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    
-   <!-- --------------Navigation Bar----------------- -->
 
-            <!-- nav Left Icons  -->
-            <nav class="flex-div">
+    <!-- --------------Navigation Bar----------------- -->
 
-                <div class="nav-div flex-div" id="nav-left">
-                    <img src="./images/menu.png" alt="error" id="nav-menu" class="menu-icon">
-                    <img src="./images/logo.png" alt="error" class="nav-logo">
-                </div>
-        
-                <!-- Nav Middle Icons  -->
-                <div class="nav-div flex-div" id="nav-middle">
-                    <div class="search-box flex-div">
-                        <input type="text" placeholder="Search Here ">
-                        <img src="./images/Search_icon.png" alt="Error">
-                    </div>
-                </div>
-        
-                <!-- nav Right Icons  -->
-                <div class="nav-div flex-div" id="nav-right">
-                    <img src="./images/notification_icon.png" alt="Error">
-                    <img src="./images/Education_video.png" alt="Error">
-                    <img src="./images/movie_play.png" alt="Error">
-                    <img src="./images/music_play_icon.png" alt="Error">
-                </div>
-        
-            </nav>
-        
-<div class="container play-container">
-    <div class="row">
-        <div class="play-video">
-            <video controls autoplay>
-                <source src="./Videos/video1.mp4" type="video/mp4">
-            </video>
-            <div class="tags">
-                <a href="">#Nature</a>
-                <a href="">#Environment</a>
-                <a href="">#Love</a>
-                <a href="">#EveryWhere</a>
+    <!-- nav Left Icons  -->
+    <nav class="flex-div">
+
+        <div class="nav-div flex-div" id="nav-left">
+            <img src="./images/menu.png" alt="error" id="nav-menu" class="menu-icon">
+            <img src="./images/logo.png" alt="error" class="nav-logo">
+        </div>
+
+        <!-- Nav Middle Icons  -->
+        <div class="nav-div flex-div" id="nav-middle">
+            <div class="search-box flex-div">
+                <input type="text" placeholder="Search Here ">
+                <img src="./images/Search_icon.png" alt="Error">
             </div>
+        </div>
 
-            <h3>Nature is the most Beautiful thing in Life </h3>
-            <div class="play-video-info">
-                <p>!225 views &bull; 2 days ago</p>
-                <div>
-                    <a href=""><img src="./images/like.png" alt="">143</a>
-                    <a href=""><img src="./images/dislike.png" alt="">6</a>
-                    <a href=""><img src="./images/share.png" alt="">share</a>
-                    <a href=""><img src="./images/save.png" alt="">save</a>
-                </div>
+        <!-- nav Right Icons  -->
+        <div class="nav-div flex-div" id="nav-right">
+            <div class="icon" onclick="toggleNotifi()">
+                <img src="./images/notification_icon.png" alt="Error">
             </div>
-            <hr>
+            <a target="_blank" href="play_video.html"><img src="./images/Education_video.png" alt="Error"></a>
+            <a target="_blank" href="play_video.html"><img src="./images/movie_play.png" alt="Error"></a>
+            <a target="_blank" href="play_video.html"><img src="./images/music_play_icon.png" alt="Error"></a>
+        </div>
 
-            <div class="publisher">
-                <p>Nature Lover &bull; </p>
-                <span> 500k Learners</span>
-            </div>
+        <!-- --Notification Section-- -->
+        <div class="notifi-box" id="box">
+            <h2>Notifications <span>5</span></h2>
 
-            <div class="vid-description">
-                <p> In this materialistic world if a man is depressed he should go in the midst of nature. nature will console him andwill fill him with inspiration to march forward in life</p>
-
-                <p>Nature refers to all the animals, plants, and other things in the world that are not made by people, and all the events and processes that are not caused by people. These grasses grow wild in nature.</p>
-                <hr>
-                <h4>134 Comments </h4>
-
-                <div class="add-comment">
-                    <input type="text" placeholder="Write Comments Here ">
-
-                </div>
-                <div class="old-comment">
-                    <img src="./images/darshan_Raval.jpeg" alt="">
-                    <div>
-                        <h3>Darshan Raval <span>2 days ago</span></h3>
-                        <p>Natural science is one of the branches of science concerned with the description, understanding and prediction of natural phenomena, based on empirical evidence from observation and experimentation.</p>
-                        <div class="comment-action">
-                            <img src="./images/like.png" alt="">
-                            <span>244</span>
-                            <img src="./images/dislike.png" alt="">
-                            <span>12</span>
-                            <a href="">All Replies </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="old-comment">
-                    <img src="./images/karan_Aujla.jpg" alt="">
-                    <div>
-                        <h3>Darshan Raval <span>2 days ago</span></h3>
-                        <p>Natural science is one of the branches of science concerned with the description, understanding and prediction of natural phenomena, based on empirical evidence from observation and experimentation.</p>
-                        <div class="comment-action">
-                            <img src="./images/like.png" alt="">
-                            <span>244</span>
-                            <img src="./images/dislike.png" alt="">
-                            <span>12</span>
-                            <a href="">All Replies </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="old-comment">
-                    <img src="./images/shahrukh_khan.jpg" alt="">
-                    <div>
-                        <h3>Darshan Raval <span>2 days ago</span></h3>
-                        <p>Natural science is one of the branches of science concerned with the description, understanding and prediction of natural phenomena, based on empirical evidence from observation and experimentation.</p>
-                        <div class="comment-action">
-                            <img src="./images/like.png" alt="">
-                            <span>244</span>
-                            <img src="./images/dislike.png" alt="">
-                            <span>12</span>
-                            <a href="">All Replies </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="old-comment">
-                    <img src="./images/salman.jpg" alt="">
-                    <div>
-                        <h3>Darshan Raval <span>2 days ago</span></h3>
-                        <p>Natural science is one of the branches of science concerned with the description, understanding and prediction of natural phenomena, based on empirical evidence from observation and experimentation.</p>
-                        <div class="comment-action">
-                            <img src="./images/like.png" alt="">
-                            <span>244</span>
-                            <img src="./images/dislike.png" alt="">
-                            <span>12</span>
-                            <a href="">All Replies </a>
-                        </div>
-                    </div>
+            <div class="notifi-item">
+                <img src="./images/darshan_Raval.jpeg" alt="img">
+                <div class="text">
+                    <h4>Darshan Raval</h4>
+                    <p>You are uploading very Nice Videos</p>
                 </div>
             </div>
 
+            <div class="notifi-item">
+                <img src="./images/karan_Aujla.jpg" alt="img">
+                <div class="text">
+                    <h4>Karan Aujla</h4>
+                    <p>Nice Website and videos also </p>
+                </div>
+            </div>
+
+            <div class="notifi-item">
+                <img src="./images/salman.jpg" alt="img">
+                <div class="text">
+                    <h4>Salman khan</h4>
+                    <p>Mast videos Bhai-Jaaan </p>
+                </div>
+            </div>
+
+            <div class="notifi-item">
+                <img src="./images/love babbar.jpg" alt="img">
+                <div class="text">
+                    <h4>Love Babbar</h4>
+                    <p>Nice videos , Keep Uploading </p>
+                </div>
+            </div>
+
+            <div class="notifi-item">
+                <img src="./images/physics_wallah.jpg" alt="img">
+                <div class="text">
+                    <h4>Alakh Pandey</h4>
+                    <p>Your all Videos are Amazing</p>
+                </div>
+            </div>
 
         </div>
-        <div class="right-sidebar">
-            <div class="side-video-list">
-               <a href="" class="small-thumbnail"> <img src="./images/thumbnail1.jpg" alt=""></a>
-                <div class="vid-info">
-                    <a href="">Best Nature video on My website </a>
-                    <p>Nature Help</p>
-                    <p>15k views</p>
 
+    </nav>
+
+
+    <!-- ----------Container Box Section---------- -->
+
+    <div class="container play-container">
+
+        <div class="row">
+            <div class="play-video">
+                <video controls autoplay>
+                    <source src="./Videos/video1.mp4" type="video/mp4">
+                </video>
+
+                <div class="tags">
+                    <a href="">#Nature</a>
+                    <a href="">#Environment</a>
+                    <a href="">#Love</a>
+                    <a href="">#EveryWhere</a>
+                </div>
+
+                <h3>Nature is the most Beautiful thing in Life </h3>
+
+                <div class="play-video-info">
+                    <p>!225 views &bull; 2 days ago</p>
+                    <div>
+                        <a href=""><img src="./images/like.png" alt="">143</a>
+                        <a href=""><img src="./images/dislike.png" alt="">6</a>
+                        <a href=""><img src="./images/share.png" alt="">share</a>
+                        <a href=""><img src="./images/save.png" alt="">save</a>
+                    </div>
+                </div>
+                <hr>
+
+                <!-- publisher Details  -->
+
+                <div class="publisher">
+                    <p>Nature Lover &bull; </p>
+                    <span> 500k Learners</span>
+                </div>
+
+                <!-- description Details  -->
+
+                <div class="vid-description">
+                    <p> In this materialistic world if a man is depressed he should go in the midst of nature. nature
+                        will console him andwill fill him with inspiration to march forward in life</p>
+
+                    <p>Nature refers to all the animals, plants, and other things in the world that are not made by
+                        people, and all the events and processes that are not caused by people. These grasses grow wild
+                        in nature.</p>
+                    <hr>
+
+                    <!-- Comments Details  -->
+                    <h4>134 Comments </h4>
+
+                    <div class="add-comment">
+                        <input type="text" placeholder="Write Comments Here ">
+
+                    </div>
+                    <div class="old-comment">
+                        <img src="./images/darshan_Raval.jpeg" alt="">
+                        <div>
+                            <h3>Darshan Raval <span>2 days ago</span></h3>
+                            <p>Natural science is one of the branches of science concerned with the description,
+                                understanding and prediction of natural phenomena, based on empirical evidence from
+                                observation and experimentation.</p>
+                            <div class="comment-action">
+                                <img src="./images/like.png" alt="">
+                                <span>244</span>
+                                <img src="./images/dislike.png" alt="">
+                                <span>12</span>
+                                <a href="">All Replies </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="old-comment">
+                        <img src="./images/karan_Aujla.jpg" alt="">
+                        <div>
+                            <h3>Darshan Raval <span>2 days ago</span></h3>
+                            <p>Natural science is one of the branches of science concerned with the description,
+                                understanding and prediction of natural phenomena, based on empirical evidence from
+                                observation and experimentation.</p>
+                            <div class="comment-action">
+                                <img src="./images/like.png" alt="">
+                                <span>244</span>
+                                <img src="./images/dislike.png" alt="">
+                                <span>12</span>
+                                <a href="">All Replies </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="old-comment">
+                        <img src="./images/shahrukh_khan.jpg" alt="">
+                        <div>
+                            <h3>Darshan Raval <span>2 days ago</span></h3>
+                            <p>Natural science is one of the branches of science concerned with the description,
+                                understanding and prediction of natural phenomena, based on empirical evidence from
+                                observation and experimentation.</p>
+                            <div class="comment-action">
+                                <img src="./images/like.png" alt="">
+                                <span>244</span>
+                                <img src="./images/dislike.png" alt="">
+                                <span>12</span>
+                                <a href="">All Replies </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="old-comment">
+                        <img src="./images/salman.jpg" alt="">
+                        <div>
+                            <h3>Darshan Raval <span>2 days ago</span></h3>
+                            <p>Natural science is one of the branches of science concerned with the description,
+                                understanding and prediction of natural phenomena, based on empirical evidence from
+                                observation and experimentation.</p>
+                            <div class="comment-action">
+                                <img src="./images/like.png" alt="">
+                                <span>244</span>
+                                <img src="./images/dislike.png" alt="">
+                                <span>12</span>
+                                <a href="">All Replies </a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="side-video-list">
-               <a href="" class="small-thumbnail"> <img src="./images/thumbnail1.jpg" alt=""></a>
-                <div class="vid-info">
-                    <a href="">Best Nature video on My website </a>
-                    <p>Nature Help</p>
-                    <p>15k views</p>
 
+            <!-- Right SideBar Recommended Videos Section  -->
+
+            <div class="right-sidebar">
+                <div class="side-video-list">
+                    <a href="" class="small-thumbnail"> <img src="./images/thumbnail1.jpg" alt=""></a>
+                    <div class="vid-info">
+                        <a href="">Best Nature video on My website </a>
+                        <p>Nature Help</p>
+                        <p>15k views</p>
+
+                    </div>
                 </div>
-            </div>
-            <div class="side-video-list">
-               <a href="" class="small-thumbnail"> <img src="./images/thumbnail1.jpg" alt=""></a>
-                <div class="vid-info">
-                    <a href="">Best Nature video on My website </a>
-                    <p>Nature Help</p>
-                    <p>15k views</p>
+                <div class="side-video-list">
+                    <a href="" class="small-thumbnail"> <img src="./images/thumbnail1.jpg" alt=""></a>
+                    <div class="vid-info">
+                        <a href="">Best Nature video on My website </a>
+                        <p>Nature Help</p>
+                        <p>15k views</p>
 
+                    </div>
                 </div>
-            </div>
-            <div class="side-video-list">
-               <a href="" class="small-thumbnail"> <img src="./images/thumbnail1.jpg" alt=""></a>
-                <div class="vid-info">
-                    <a href="">Best Nature video on My website </a>
-                    <p>Nature Help</p>
-                    <p>15k views</p>
+                <div class="side-video-list">
+                    <a href="" class="small-thumbnail"> <img src="./images/thumbnail1.jpg" alt=""></a>
+                    <div class="vid-info">
+                        <a href="">Best Nature video on My website </a>
+                        <p>Nature Help</p>
+                        <p>15k views</p>
 
+                    </div>
                 </div>
-            </div>
-            <div class="side-video-list">
-               <a href="" class="small-thumbnail"> <img src="./images/thumbnail1.jpg" alt=""></a>
-                <div class="vid-info">
-                    <a href="">Best Nature video on My website </a>
-                    <p>Nature Help</p>
-                    <p>15k views</p>
+                <div class="side-video-list">
+                    <a href="" class="small-thumbnail"> <img src="./images/thumbnail1.jpg" alt=""></a>
+                    <div class="vid-info">
+                        <a href="">Best Nature video on My website </a>
+                        <p>Nature Help</p>
+                        <p>15k views</p>
 
+                    </div>
                 </div>
-            </div>
-            <div class="side-video-list">
-               <a href="" class="small-thumbnail"> <img src="./images/thumbnail1.jpg" alt=""></a>
-                <div class="vid-info">
-                    <a href="">Best Nature video on My website </a>
-                    <p>Nature Help</p>
-                    <p>15k views</p>
+                <div class="side-video-list">
+                    <a href="" class="small-thumbnail"> <img src="./images/thumbnail1.jpg" alt=""></a>
+                    <div class="vid-info">
+                        <a href="">Best Nature video on My website </a>
+                        <p>Nature Help</p>
+                        <p>15k views</p>
 
+                    </div>
                 </div>
-            </div>
-            <div class="side-video-list">
-               <a href="" class="small-thumbnail"> <img src="./images/thumbnail1.jpg" alt=""></a>
-                <div class="vid-info">
-                    <a href="">Best Nature video on My website </a>
-                    <p>Nature Help</p>
-                    <p>15k views</p>
+                <div class="side-video-list">
+                    <a href="" class="small-thumbnail"> <img src="./images/thumbnail1.jpg" alt=""></a>
+                    <div class="vid-info">
+                        <a href="">Best Nature video on My website </a>
+                        <p>Nature Help</p>
+                        <p>15k views</p>
 
+                    </div>
                 </div>
-            </div>
-            <div class="side-video-list">
-               <a href="" class="small-thumbnail"> <img src="./images/thumbnail1.jpg" alt=""></a>
-                <div class="vid-info">
-                    <a href="">Best Nature video on My website </a>
-                    <p>Nature Help</p>
-                    <p>15k views</p>
+                <div class="side-video-list">
+                    <a href="" class="small-thumbnail"> <img src="./images/thumbnail1.jpg" alt=""></a>
+                    <div class="vid-info">
+                        <a href="">Best Nature video on My website </a>
+                        <p>Nature Help</p>
+                        <p>15k views</p>
 
+                    </div>
                 </div>
-            </div>
-            <div class="side-video-list">
-               <a href="" class="small-thumbnail"> <img src="./images/thumbnail1.jpg" alt=""></a>
-                <div class="vid-info">
-                    <a href="">Best Nature video on My website </a>
-                    <p>Nature Help</p>
-                    <p>15k views</p>
+                <div class="side-video-list">
+                    <a href="" class="small-thumbnail"> <img src="./images/thumbnail1.jpg" alt=""></a>
+                    <div class="vid-info">
+                        <a href="">Best Nature video on My website </a>
+                        <p>Nature Help</p>
+                        <p>15k views</p>
 
+                    </div>
                 </div>
-            </div>
-            <div class="side-video-list">
-               <a href="" class="small-thumbnail"> <img src="./images/thumbnail1.jpg" alt=""></a>
-                <div class="vid-info">
-                    <a href="">Best Nature video on My website </a>
-                    <p>Nature Help</p>
-                    <p>15k views</p>
+                <div class="side-video-list">
+                    <a href="" class="small-thumbnail"> <img src="./images/thumbnail1.jpg" alt=""></a>
+                    <div class="vid-info">
+                        <a href="">Best Nature video on My website </a>
+                        <p>Nature Help</p>
+                        <p>15k views</p>
 
+                    </div>
                 </div>
-            </div>
-            <div class="side-video-list">
-               <a href="" class="small-thumbnail"> <img src="./images/thumbnail1.jpg" alt=""></a>
-                <div class="vid-info">
-                    <a href="">Best Nature video on My website </a>
-                    <p>Nature Help</p>
-                    <p>15k views</p>
+                <div class="side-video-list">
+                    <a href="" class="small-thumbnail"> <img src="./images/thumbnail1.jpg" alt=""></a>
+                    <div class="vid-info">
+                        <a href="">Best Nature video on My website </a>
+                        <p>Nature Help</p>
+                        <p>15k views</p>
 
+                    </div>
                 </div>
-            </div>
+                <div class="side-video-list">
+                    <a href="" class="small-thumbnail"> <img src="./images/thumbnail1.jpg" alt=""></a>
+                    <div class="vid-info">
+                        <a href="">Best Nature video on My website </a>
+                        <p>Nature Help</p>
+                        <p>15k views</p>
 
+                    </div>
+                </div>
+
+            </div>
         </div>
     </div>
-</div>
-
-
-
 
 </body>
+<script src="script.js"></script>
+
 </html>

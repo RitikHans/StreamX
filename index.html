@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,11 +8,12 @@
     <title>My Video Streaming Website</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
     <!-- --------------Navigation Bar----------------- -->
 
-            <!-- nav Left Icons  -->
+    <!-- nav Left Icons  -->
     <nav class="flex-div">
 
         <div class="nav-div flex-div" id="nav-left">
@@ -29,137 +31,212 @@
 
         <!-- nav Right Icons  -->
         <div class="nav-div flex-div" id="nav-right">
-            <img src="./images/notification_icon.png" alt="Error">
-            <img src="./images/Education_video.png" alt="Error">
-            <img src="./images/movie_play.png" alt="Error">
-            <img src="./images/music_play_icon.png" alt="Error">
+            <div class="icon" onclick="toggleNotifi()">
+                <img src="./images/notification_icon.png" alt="Error">
+            </div>
+            <a target="_blank" href="play_video.html"><img src="./images/Education_video.png" alt="Error"></a>
+            <a target="_blank" href="play_video.html"><img src="./images/movie_play.png" alt="Error"></a>
+            <a target="_blank" href="play_video.html"><img src="./images/music_play_icon.png" alt="Error"></a>
+        </div>
+
+        <!-- --Notifications Bar-- -->
+        <div class="notifi-box" id="box">
+            <h2>Notifications <span>5</span></h2>
+            <div class="notifi-item">
+                <img src="./images/darshan_Raval.jpeg" alt="img">
+                <div class="text">
+                    <h4>Darshan Raval</h4>
+                    <p>You are uploading very Nice Videos</p>
+                </div>
+            </div>
+
+            <div class="notifi-item">
+                <img src="./images/karan_Aujla.jpg" alt="img">
+                <div class="text">
+                    <h4>Karan Aujla</h4>
+                    <p>Nice Website and videos also </p>
+                </div>
+            </div>
+
+            <div class="notifi-item">
+                <img src="./images/salman.jpg" alt="img">
+                <div class="text">
+                    <h4>Salman khan</h4>
+                    <p>Mast videos Bhai-Jaaan </p>
+                </div>
+            </div>
+
+            <div class="notifi-item">
+                <img src="./images/love babbar.jpg" alt="img">
+                <div class="text">
+                    <h4>Love Babbar</h4>
+                    <p>Nice videos , Keep Uploading </p>
+                </div>
+            </div>
+
+            <div class="notifi-item">
+                <img src="./images/physics_wallah.jpg" alt="img">
+                <div class="text">
+                    <h4>Alakh Pandey</h4>
+                    <p>Your all Videos are Amazing</p>
+                </div>
+            </div>
+
         </div>
 
     </nav>
 
-         <!-- ------------Side-Bar------------- -->
+    <!-- ------------Side-Bar------------- -->
 
-         <div class="sidebar">
-            <div class="shortcut-links">
-                <a href=""><img src="./images/home.png" alt="Error"><p>Home</p></a>
-                <a href=""><img src="./images/movie_watch.png" alt="Error"><p>Movies</p></a>
-                <a href=""><img src="./images/education.png" alt="Error"><p>Education</p></a>
-                <a href=""><img src="./images/play_song.png" alt="Error"><p>Songs</p></a>
-                <a href=""><img src="./images/show_more.png" alt="Error"><p>Show-More</p></a>
-                <hr>
-            </div>
-            <div class="popular-videos">
-                <h3>Trending Videos</h3>
-                <a href=""><img src="./images/shahrukh_khan.jpg" alt="Error"><p>ShahRukh Khan</p></a>
-                <a href=""><img src="./images/salman.jpg" alt="Error"><p>Salman Khan</p></a>
-                <a href=""><img src="./images/karan_Aujla.jpg" alt="Error"><p>Karan Aujla</p> </a>
-                <a href=""><img src="./images/darshan_Raval.jpeg" alt="Error"><p>Darshan raval</p></a>
-                <a href=""><img src="./images/love babbar.jpg" alt="Error"><p>Love Babbar </p></a>
-                <a href=""><img src="./images/physics_wallah.jpg" alt="Error"><p>Physics Wallah</p></a>
-            </div>
-         </div>
+    <div class="sidebar">
+        <div class="shortcut-links">
+            <a><img src="./images/home.png" alt="Error">
+                <p>Home</p>
+            </a>
+            <a href="play_video.html" target="_blank"><img src="./images/movie_watch.png" alt="Error">
+                <p>Movies</p>
+            </a>
+            <a href="play_video.html" target="_blank"><img src="./images/education.png" alt="Error">
+                <p>Education</p>
+            </a>
+            <a href="play_video.html" target="_blank"><img src="./images/play_song.png" alt="Error">
+                <p>Songs</p>
+            </a>
+            <a href="play_video.html" target="_blank"><img src="./images/show_more.png" alt="Error">
+                <p>Show-More</p>
+            </a>
+            <hr>
+        </div>
+        <div class="popular-videos">
+            <h3>Trending Videos</h3>
+            <a href="play_video.html" target="_blank"><img src="./images/shahrukh_khan.jpg" alt="Error">
+                <p>ShahRukh Khan</p>
+            </a>
+            <a href="play_video.html" target="_blank"><img src="./images/salman.jpg" alt="Error">
+                <p>Salman Khan</p>
+            </a>
+            <a href="play_video.html" target="_blank"><img src="./images/karan_Aujla.jpg" alt="Error">
+                <p>Karan Aujla</p>
+            </a>
+            <a href="play_video.html" target="_blank"><img src="./images/darshan_Raval.jpeg" alt="Error">
+                <p>Darshan raval</p>
+            </a>
+            <a href="play_video.html" target="_blank"><img src="./images/love babbar.jpg" alt="Error">
+                <p>Love Babbar </p>
+            </a>
+            <a href="play_video.html" target="_blank"><img src="./images/physics_wallah.jpg" alt="Error">
+                <p>Physics Wallah</p>
+            </a>
+        </div>
+    </div>
 
-         <!-- ----------------main------------------ -->
+    <!-- -----------Main Container Section------------------ -->
 
-         <div class="container">
-            <div class="banner">
-                <!-- <img src="./images/banner.png" alt=""> -->
-            </div>
+    <div class="container">
 
-            <div class="list-container">
-                <div class="vid-list">
-                    <a href="play_video.html" target="_blank"><img src="./images/love babbar.jpg" class="thumbnail"></a>
-                    <div class="flex-div">
-                        <img src="" alt="">
-                        <div class="vid-info">
-                            <a href="play_video.html" target="_blank">Best Channel to learn coding that help you to be a web devloper</a>
-                            <p>Love Babbar</p>
-                            <p>15k views &bull; 2 days ago</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="vid-list">
-                    <a href=""><img src="./images/karan_Aujla.jpg" class="thumbnail"></a>
-                    <div class="flex-div">
-                        <img src="" alt="">
-                        <div class="vid-info">
-                            <a href="">Best Channel to learn coding that help you to be a web devloper</a>
-                            <p>Love Babbar</p>
-                            <p>15k views &bull; 2 days ago</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="vid-list">
-                    <a href=""><img src="./images/love babbar.jpg" class="thumbnail"></a>
-                    <div class="flex-div">
-                        <img src="" alt="">
-                        <div class="vid-info">
-                            <a href="">Best Channel to learn coding that help you to be a web devloper</a>
-                            <p>Love Babbar</p>
-                            <p>15k views &bull; 2 days ago</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="vid-list">
-                    <a href=""><img src="./images/karan_Aujla.jpg" class="thumbnail"></a>
-                    <div class="flex-div">
-                        <img src="" alt="">
-                        <div class="vid-info">
-                            <a href="">Best Channel to learn coding that help you to be a web devloper</a>
-                            <p>Love Babbar</p>
-                            <p>15k views &bull; 2 days ago</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="vid-list">
-                    <a href=""><img src="./images/love babbar.jpg" class="thumbnail"></a>
-                    <div class="flex-div">
-                        <img src="" alt="">
-                        <div class="vid-info">
-                            <a href="">Best Channel to learn coding that help you to be a web devloper</a>
-                            <p>Love Babbar</p>
-                            <p>15k views &bull; 2 days ago</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="vid-list">
-                    <a href=""><img src="./images/physics_wallah.jpg" class="thumbnail"></a>
-                    <div class="flex-div">
-                        <img src="" alt="">
-                        <div class="vid-info">
-                            <a href="">Best Channel to learn coding that help you to be a web devloper</a>
-                            <p>Love Babbar</p>
-                            <p>15k views &bull; 2 days ago</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="vid-list">
-                    <a href=""><img src="./images/love babbar.jpg" class="thumbnail"></a>
-                    <div class="flex-div">
-                        <img src="" alt="">
-                        <div class="vid-info">
-                            <a href="">Best Channel to learn coding that help you to be a web devloper</a>
-                            <p>Love Babbar</p>
-                            <p>15k views &bull; 2 days ago</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="vid-list">
-                    <a href=""><img src="./images/karan_Aujla.jpg" class="thumbnail"></a>
-                    <div class="flex-div">
-                        <img src="" alt="">
-                        <div class="vid-info">
-                            <a href="">Best Channel to learn coding that help you to be a web devloper</a>
-                            <p>Love Babbar</p>
-                            <p>15k views &bull; 2 days ago</p>
-                        </div>
+        <div class="list-container">
+            <div class="vid-list">
+                <a href="play_video.html" target="_blank"><img src="./images/love babbar.jpg" class="thumbnail"></a>
+                <div class="flex-div">
+                    <img src="" alt="">
+                    <div class="vid-info">
+                        <a href="play_video.html" target="_blank">Best Channel to learn coding that help you to be a web
+                            devloper</a>
+                        <p>Love Babbar</p>
+                        <p>15k views &bull; 2 days ago</p>
                     </div>
                 </div>
             </div>
-         </div>
+            <div class="vid-list">
+                <a href="play_video.html" target="_blank"><img src="./images/karan_Aujla.jpg" class="thumbnail"></a>
+                <div class="flex-div">
+                    <img src="" alt="">
+                    <div class="vid-info">
+                        <a href="play_video.html" target="_blank">Best Channel to learn coding that help you to be a web
+                            devloper</a>
+                        <p>Love Babbar</p>
+                        <p>15k views &bull; 2 days ago</p>
+                    </div>
+                </div>
+            </div>
+            <div class="vid-list">
+                <a href="play_video.html" target="_blank"><img src="./images/love babbar.jpg" class="thumbnail"></a>
+                <div class="flex-div">
+                    <img src="" alt="">
+                    <div class="vid-info">
+                        <a href="play_video.html" target="_blank">Best Channel to learn coding that help you to be a web
+                            devloper</a>
+                        <p>Love Babbar</p>
+                        <p>15k views &bull; 2 days ago</p>
+                    </div>
+                </div>
+            </div>
+            <div class="vid-list">
+                <a href="play_video.html" target="_blank"><img src="./images/karan_Aujla.jpg" class="thumbnail"></a>
+                <div class="flex-div">
+                    <img src="" alt="">
+                    <div class="vid-info">
+                        <a href="play_video.html" target="_blank">Best Channel to learn coding that help you to be a web
+                            devloper</a>
+                        <p>Love Babbar</p>
+                        <p>15k views &bull; 2 days ago</p>
+                    </div>
+                </div>
+            </div>
+            <div class="vid-list">
+                <a href="play_video.html" target="_blank"><img src="./images/love babbar.jpg" class="thumbnail"></a>
+                <div class="flex-div">
+                    <img src="" alt="">
+                    <div class="vid-info">
+                        <a href="play_video.html" target="_blank">Best Channel to learn coding that help you to be a web
+                            devloper</a>
+                        <p>Love Babbar</p>
+                        <p>15k views &bull; 2 days ago</p>
+                    </div>
+                </div>
+            </div>
+            <div class="vid-list">
+                <a href="play_video.html" target="_blank"><img src="./images/physics_wallah.jpg" class="thumbnail"></a>
+                <div class="flex-div">
+                    <img src="" alt="">
+                    <div class="vid-info">
+                        <a href="play_video.html" target="_blank">Best Channel to learn coding that help you to be a web
+                            devloper</a>
+                        <p>Love Babbar</p>
+                        <p>15k views &bull; 2 days ago</p>
+                    </div>
+                </div>
+            </div>
+            <div class="vid-list">
+                <a href="play_video.html" target="_blank"><img src="./images/love babbar.jpg" class="thumbnail"></a>
+                <div class="flex-div">
+                    <img src="" alt="">
+                    <div class="vid-info">
+                        <a href="play_video.html" target="_blank">Best Channel to learn coding that help you to be a web
+                            devloper</a>
+                        <p>Love Babbar</p>
+                        <p>15k views &bull; 2 days ago</p>
+                    </div>
+                </div>
+            </div>
+            <div class="vid-list">
+                <a href="play_video.html" target="_blank"><img src="./images/karan_Aujla.jpg" class="thumbnail"></a>
+                <div class="flex-div">
+                    <img src="" alt="">
+                    <div class="vid-info">
+                        <a href="play_video.html" target="_blank">Best Channel to learn coding that help you to be a web
+                            devloper</a>
+                        <p>Love Babbar</p>
+                        <p>15k views &bull; 2 days ago</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
 
 
-        </body>
-        <script src="script.js"></script>
+</body>
+<script src="script.js"></script>
+
 </html>
